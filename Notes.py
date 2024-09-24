@@ -1,33 +1,67 @@
 '''
-	File Name: errors.py
+	File Name: Errors
 	Author: Mr. Kalisz
-	Date Created: March 29, 2019
-	Date Last Edited: March 29, 2019
+	Date Created: Sept 24, 2024
+	Date Last Edited: Sept 24, 2024
 '''
 
-# From input, recieve two integers from the user and add them together.  Output the result.
+print(5)
 
-num1 = input("Input a number: ")
-num2 = input("Input a number: ")
+#Errors
 
-Print(num + num2)
+#Syntax Errors - Errors cauased by not following the rules of your programming language
+#Syntax Errors always happen before the code runs
 
-# From input recieve two integers.  Output the quotient rounded down.
+#num = 3 = 5
+'''
+File "/workspaces/ics2o1-01-24-25-practice-problem-1-6-PP1.6-ICD2O/Notes.py", line 14
+    num = 3 = 5
+          ^
+SyntaxError: cannot assign to literal
+'''
 
-num1 = input("Input a number: ")
-num2 = input("Input a number: ")
+#num = (3 + (5 - 4) * 5
+'''
+  File "/workspaces/ics2o1-01-24-25-practice-problem-1-6-PP1.6-ICD2O/Notes.py", line 22
+    num = (3 + (5 - 4) * 5
+          ^
+SyntaxError: '(' was never closed
+'''
 
-print(num1/num2)
+#Runtime Errors - Errors that happen based on a value - won't always happen
+#Errors happen while your code is running
 
-# Output the phrase "hello Mr. Kalisz have you seen my work yet?"
+#print(5 / 0)
+'''
+  File "/workspaces/ics2o1-01-24-25-practice-problem-1-6-PP1.6-ICD2O/Notes.py", line 34, in <module>
+    print(5 / 0)
+          ~~^~~
+ZeroDivisionError: division by zero
+'''
+#print(3 + "word")
+'''
+  File "/workspaces/ics2o1-01-24-25-practice-problem-1-6-PP1.6-ICD2O/Notes.py", line 41, in <module>
+    print(3 + "word")
+          ~~^~~~~~~~
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+'''
 
-print (hello Mr. Kalisz have you seen my work yet?)
+#Logical Errors - Program executes flawlessly but with the wrong outcome
+#Error that happens after our program - based on the result
+#There is no error message, you need to use your output to check
 
-# From input recieve two numbers (can be decimal fractions).  
-# Output their result multiplied together.  Then round down to the nearest whole number
+#Add 3 and 5 together
 
-input("Input a number: ")
-num2 = input("Input a number: ")
+print(3 + 5) #Instructions don't say to output it
 
-print (int(num1 * num2))
+#Add 2 and 2 together, out the result
 
+print(1 + 2) #Wrong values
+
+#Add 3 and 5 together then multiply by 2, output the result
+
+print(3 + 5 * 2) #Order of operations
+
+#Add 2 and 2 together then multiply by 1, then output it
+
+print(2 + 2 * 1) #Order of operations, but the result is correct.  This does not mean the program is
