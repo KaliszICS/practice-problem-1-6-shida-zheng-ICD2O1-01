@@ -30,7 +30,6 @@ def q3():
 def q4():
   num1 = input("Input a number: ")
   num2 = input("Input a number: ")
-  
   print (int(num1 * num2))
 
 #q1()
